@@ -1,14 +1,15 @@
 ---
-title: Streamlit Template Space
+title: NovaBank Angel
 emoji: 🚀
 colorFrom: red
 colorTo: red
 sdk: docker
 app_port: 8501
 tags:
-  - streamlit
+- streamlit
 pinned: false
-short_description: Streamlit template space
+short_description: dashboard análisis de fraude en Streamlit
+license: unknown
 ---
 
 # Welcome to Streamlit!
