@@ -1,6 +1,6 @@
 ---
-title: Demo de Actuarial Cortex  Detección de Fraude
-emoji: =€
+title: Demo de Actuarial Cortex - Deteccion de Fraude
+emoji: ":bank:"
 colorFrom: red
 colorTo: red
 sdk: docker
@@ -9,17 +9,17 @@ tags:
 - streamlit
 - actuarial-cortex
 pinned: false
-short_description: Demo Actuarial Cortex  dashboard análisis de fraude en Streamlit
+short_description: Demo Actuarial Cortex - dashboard analisis de fraude en Streamlit
 license: unknown
 ---
 
-# Demo de Actuarial Cortex  Detección de Fraude
+# Demo de Actuarial Cortex - Deteccion de Fraude
 
-Dashboard de análisis de fraude en Streamlit. Código en [GitHub (actuarial-cortex-demo-bank)](https://github.com/angelucv/actuarial-cortex-demo-bank); se despliega en [Hugging Face Spaces](https://huggingface.co/spaces/angelucv/NovaBank_Angel).
+Dashboard de analisis de fraude en Streamlit. Codigo en [GitHub (actuarial-cortex-demo-bank)](https://github.com/angelucv/actuarial-cortex-demo-bank); se despliega en [Hugging Face Spaces](https://huggingface.co/spaces/angelucv/NovaBank_Angel).
 
 ## Repo y despliegue
 
-- **GitHub:** origen del código (push a `main` sincroniza con el Space).
+- **GitHub:** origen del codigo (push a `main` sincroniza con el Space).
 - **Space:** [angelucv/NovaBank_Angel](https://huggingface.co/spaces/angelucv/NovaBank_Angel).
 
-Para sincronización automática GitHub ’ HF: en el repo de GitHub, Settings ’ Secrets ’ `HF_TOKEN` (token de HF con permiso Write).
+Para sincronizacion automatica GitHub a HF: en el repo de GitHub, Settings, Secrets, `HF_TOKEN` (token de HF con permiso Write).
