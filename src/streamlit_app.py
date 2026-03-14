@@ -43,8 +43,20 @@ def handle_click(segment_value, grouping_key_value):
 df = load_data()
 kpis = calculate_kpis(df)
 
+# --- Branding Actuarial Cortex ---
+try:
+    st.sidebar.image(
+        "https://raw.githubusercontent.com/angelucv/cvea-platform/main/actuarial-cortex/logo-AC/logo-AC-AC-horizontal-negro.png",
+        use_container_width=True,
+        caption="Actuarial Cortex"
+    )
+except Exception:
+    st.sidebar.markdown("**Actuarial Cortex**")
+st.sidebar.caption("Aplicativo para bancos · Detección de fraude")
+
 # --- Títulos y Navegación Lateral ---
-st.title("🛡️ Sistema de Detección de Fraude - NovaBank Analytics")
+st.title("🛡️ Actuarial Cortex — Banca · Detección de Fraude")
+st.markdown("**Aplicativo de Actuarial Cortex para el sector bancario, enfocado en análisis y detección de fraude.**")
 
 st.sidebar.header("Opciones de Análisis")
 
@@ -84,7 +96,7 @@ with tab1:
     # -------------------------------------------------------------
     st.markdown("### Visión de Alto Nivel y Exposición Global")
     st.info("""
-        Este resumen ejecutivo presenta la situación actual de la cartera (Demo de Actuarial Cortex), enfocándose en la **Exposición al Riesgo (IER)** y la **Tasa de Fraude (TF) Global**. 
+        Este resumen ejecutivo presenta la situación actual de la cartera (Actuarial Cortex — Banca), enfocándose en la **Exposición al Riesgo (IER)** y la **Tasa de Fraude (TF) Global**. 
         El IER es una métrica compuesta que integra la frecuencia y el impacto monetario del fraude, proporcionando un indicador consolidado para la Junta Directiva.
         Utilice los segmentos de riesgo principales para entender dónde concentrar los esfuerzos de mitigación.
     """)

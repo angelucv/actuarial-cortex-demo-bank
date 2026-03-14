@@ -34,8 +34,20 @@ def handle_click(segment_value, grouping_key_value):
 df = load_data()
 kpis = calculate_kpis(df)
 
+# --- Branding Actuarial Cortex ---
+try:
+    st.sidebar.image(
+        "https://raw.githubusercontent.com/angelucv/cvea-platform/main/actuarial-cortex/logo-AC/logo-AC-AC-horizontal-negro.png",
+        use_container_width=True,
+        caption="Actuarial Cortex"
+    )
+except Exception:
+    st.sidebar.markdown("**Actuarial Cortex**")
+st.sidebar.caption("Aplicativo para bancos · Detección de fraude")
+
 # --- Títulos y Navegación Lateral ---
-st.title("🛡️ Sistema de Detección de Fraude — Demo de Actuarial Cortex")
+st.title("🛡️ Actuarial Cortex — Banca · Detección de Fraude")
+st.markdown("**Aplicativo de Actuarial Cortex para el sector bancario, enfocado en análisis y detección de fraude.**")
 
 st.sidebar.header("Opciones de Análisis")
 

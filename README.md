@@ -8,7 +8,7 @@ tags:
 - streamlit
 - actuarial-cortex
 pinned: false
-short_description: Demo Actuarial Cortex - analisis de fraude (Streamlit)
+short_description: Actuarial Cortex - Banca, deteccion de fraude (Streamlit)
 license: unknown
 ---
 
