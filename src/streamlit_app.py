@@ -66,6 +66,8 @@ st.markdown("""
 forma parte de su oferta para el sector bancario: permite explorar la **exposición al riesgo (IER)** y la
 **tasa de fraude** por segmentos (marca de tarjeta, categoría de comercio), con métricas ejecutivas y
 análisis estratégico para apoyar la toma de decisiones.
+
+*Los datos mostrados son de **demostración** (dataset Kaggle) y tienen fines ilustrativos.*
 """)
 st.divider()
 
