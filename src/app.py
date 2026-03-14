@@ -7,7 +7,7 @@ from risk_strategies import RiskSegmenter, STRATEGY_MAP
 
 # --- Configuración Inicial ---
 st.set_page_config(
-    page_title="NovaBank - Plataforma de Detección de Fraude",
+    page_title="Demo de Actuarial Cortex — Detección de Fraude",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -35,7 +35,7 @@ df = load_data()
 kpis = calculate_kpis(df)
 
 # --- Títulos y Navegación Lateral ---
-st.title("🛡️ Sistema de Detección de Fraude - NovaBank Analytics")
+st.title("🛡️ Sistema de Detección de Fraude — Demo de Actuarial Cortex")
 
 st.sidebar.header("Opciones de Análisis")
 

@@ -1,4 +1,4 @@
-# Sincroniza este repo con el Space NovaBank_Angel en Hugging Face.
+# Sincroniza este repo con el Space en Hugging Face (Demo de Actuarial Cortex).
 # Cada push a main sube el contenido al Space.
 #
 # En GitHub: Settings → Secrets and variables → Actions
@@ -26,6 +26,4 @@ jobs:
           HF_USER: ${{ vars.HF_USERNAME || 'angelucv' }}
           HF_SPACE: ${{ vars.HF_SPACE_NAME || 'NovaBank_Angel' }}
         run: |
-          git config --global credential.helper store
-          echo "https://${HF_USER}:${HF_TOKEN}@huggingface.co" > ~/.git-credentials
-          git push --force "https://huggingface.co/spaces/${HF_USER}/${HF_SPACE}" main
+          git push --force "https://${HF_USER}:${HF_TOKEN}@huggingface.co/spaces/${HF_USER}/${HF_SPACE}" main

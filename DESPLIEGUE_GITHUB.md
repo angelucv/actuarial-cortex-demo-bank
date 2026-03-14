@@ -1,11 +1,11 @@
-# NovaBank Angel — Subir a GitHub y desplegar desde ahí
+# Demo de Actuarial Cortex — Subir a GitHub y desplegar desde ahí
 
-El código ya está clonado desde Hugging Face y preparado con el workflow de sincronización.
+El código está en GitHub y preparado con el workflow de sincronización al Space en Hugging Face.
 
 ## Repositorio
 
 - **GitHub:** [angelucv/actuarial-cortex-demo-bank](https://github.com/angelucv/actuarial-cortex-demo-bank)
-- **Código local:** `C:\Users\Angel\NovaBank_Angel` (clonado desde el Space HF).
+- **Código local:** `C:\Users\Angel\NovaBank_Angel` (carpeta clonada desde el Space HF).
 
 ## Sincronización automática con Hugging Face
 

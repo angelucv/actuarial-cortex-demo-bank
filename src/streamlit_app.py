@@ -11,7 +11,7 @@ from risk_strategies import RiskSegmenter, STRATEGY_MAP, CardBrandStrategy
 
 # --- Configuración Inicial ---
 st.set_page_config(
-    page_title="NovaBank - Plataforma de Detección de Fraude",
+    page_title="Demo de Actuarial Cortex — Detección de Fraude",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -84,7 +84,7 @@ with tab1:
     # -------------------------------------------------------------
     st.markdown("### Visión de Alto Nivel y Exposición Global")
     st.info("""
-        Este resumen ejecutivo presenta la situación actual de la cartera de NovaBank, enfocándose en la **Exposición al Riesgo (IER)** y la **Tasa de Fraude (TF) Global**. 
+        Este resumen ejecutivo presenta la situación actual de la cartera (Demo de Actuarial Cortex), enfocándose en la **Exposición al Riesgo (IER)** y la **Tasa de Fraude (TF) Global**. 
         El IER es una métrica compuesta que integra la frecuencia y el impacto monetario del fraude, proporcionando un indicador consolidado para la Junta Directiva.
         Utilice los segmentos de riesgo principales para entender dónde concentrar los esfuerzos de mitigación.
     """)

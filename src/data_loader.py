@@ -19,7 +19,7 @@ def clean_currency(x):
 def load_data(rows_limit=20000000):
     """
     Carga datos uniendo CSVs y JSONs desde KaggleHub y adapta las columnas
-    al formato esperado por la aplicación (NovaBank).
+    al formato esperado por la aplicación (Demo de Actuarial Cortex).
     """
     try:
         # 1. Descargar/Ubicar dataset
