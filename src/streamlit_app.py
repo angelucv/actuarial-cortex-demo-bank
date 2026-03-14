@@ -53,6 +53,7 @@ try:
 except Exception:
     st.sidebar.markdown("**Actuarial Cortex**")
 st.sidebar.caption("Aplicativo para bancos · Detección de fraude")
+st.sidebar.markdown("[Ir a Actuarial Cortex](https://actuarial-cortex.pages.dev/)" + "  ")
 
 # --- Inicio: logo principal y descripción ---
 try:
@@ -60,9 +61,9 @@ try:
 except Exception:
     st.markdown("**Actuarial Cortex**")
 st.markdown("""
-**Actuarial Cortex** es un hub de conocimiento y tecnología actuarial. Este **demo de detección de fraude** 
-forma parte de su oferta para el sector bancario: permite explorar la **exposición al riesgo (IER)** y la 
-**tasa de fraude** por segmentos (marca de tarjeta, categoría de comercio), con métricas ejecutivas y 
+**[Actuarial Cortex](https://actuarial-cortex.pages.dev/)** es un hub de conocimiento y tecnología actuarial. Este **demo de detección de fraude**
+forma parte de su oferta para el sector bancario: permite explorar la **exposición al riesgo (IER)** y la
+**tasa de fraude** por segmentos (marca de tarjeta, categoría de comercio), con métricas ejecutivas y
 análisis estratégico para apoyar la toma de decisiones.
 """)
 st.divider()
