@@ -1,6 +1,5 @@
 ---
 title: Demo de Actuarial Cortex - Deteccion de Fraude
-emoji: ??
 colorFrom: red
 colorTo: red
 sdk: docker
