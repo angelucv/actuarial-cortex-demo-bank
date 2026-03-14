@@ -95,6 +95,12 @@ if filtered_segment:
 else:
     st.sidebar.markdown("**Filtro Activo:** Ninguno")
 
+# --- Pie del menú lateral (unificado Actuarial Cortex) ---
+st.sidebar.markdown("---")
+st.sidebar.caption("**Elaborado por el Prof. Angel Colmenares**")
+st.sidebar.caption("© Actuarial Cortex")
+st.sidebar.caption("Conocimiento · Tecnología · Formación")
+st.sidebar.caption("actuarial.cortex@gmail.com | @actuarial_cortex")
 
 # --- Pestañas Principales ---
 tab1, tab2 = st.tabs(["Resumen Ejecutivo (Junta Directiva)", "Análisis Estratégico de Riesgo (Analistas)"]) 

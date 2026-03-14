@@ -72,6 +72,13 @@ strategy_name = st.sidebar.radio(
     help="Cambia la lógica de agrupación (Patrón Strategy)."
 )
 
+# --- Pie del menú lateral (unificado Actuarial Cortex) ---
+st.sidebar.markdown("---")
+st.sidebar.caption("**Elaborado por el Prof. Angel Colmenares**")
+st.sidebar.caption("© Actuarial Cortex")
+st.sidebar.caption("Conocimiento · Tecnología · Formación")
+st.sidebar.caption("actuarial.cortex@gmail.com | @actuarial_cortex")
+
 # --- Pestañas Principales ---
 tab1, tab2 = st.tabs(["Resumen Ejecutivo", "Análisis Estratégico de Riesgo"]) 
 
