@@ -40,8 +40,9 @@ def handle_click(segment_value, grouping_key_value):
         st.toast("Filtro removido.")
 
 # --- Carga de Datos ---
-df = load_data()
-kpis = calculate_kpis(df)
+with st.spinner("Cargando datos…"):
+    df = load_data()
+    kpis = calculate_kpis(df)
 
 # URLs de logos Actuarial Cortex (sitio oficial)
 LOGO_SIDEBAR = "https://actuarial-cortex.pages.dev/logo-AC/logo-AC-AC-vertical-blanco.png"
