@@ -40,9 +40,16 @@ def handle_click(segment_value, grouping_key_value):
         st.toast("Filtro removido.")
 
 # --- Carga de Datos ---
-with st.spinner("Cargando datos…"):
-    df = load_data()
-    kpis = calculate_kpis(df)
+try:
+    with st.spinner("Cargando datos…"):
+        df = load_data()
+        kpis = calculate_kpis(df)
+except Exception:
+    st.error(
+        "No se pudieron cargar los datos del demo. Por favor, intente de nuevo más tarde. "
+        "Si el problema continúa, puede contactar a [Actuarial Cortex](https://actuarial-cortex.pages.dev/)."
+    )
+    st.stop()
 
 # URLs de logos Actuarial Cortex (sitio oficial)
 LOGO_SIDEBAR = "https://actuarial-cortex.pages.dev/logo-AC/logo-AC-AC-vertical-blanco.png"
