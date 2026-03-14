@@ -2,31 +2,12 @@
 
 El código ya está clonado desde Hugging Face y preparado con el workflow de sincronización.
 
-## 1. Crear el repositorio en GitHub
+## Repositorio
 
-1. Ve a [github.com/new](https://github.com/new).
-2. **Repository name:** `NovaBank_Angel` (o el que prefieras, ej. `novabank-angel-demo`).
-3. **Visibility:** Public (o Private).
-4. **No** marques "Add a README" (el repo debe estar vacío para hacer el primer push).
-5. Clic en **Create repository**.
+- **GitHub:** [angelucv/actuarial-cortex-demo-bank](https://github.com/angelucv/actuarial-cortex-demo-bank)
+- **Código local:** `C:\Users\Angel\NovaBank_Angel` (clonado desde el Space HF).
 
-## 2. Subir el código desde tu PC
-
-En PowerShell (ajusta el nombre del repo si usaste otro):
-
-```powershell
-cd C:\Users\Angel\NovaBank_Angel
-git push -u origin main
-```
-
-Si creaste el repo con otro nombre (ej. `novabank-angel-demo`), actualiza el remote antes:
-
-```powershell
-git remote set-url origin https://github.com/angelucv/NOMBRE_QUE_ELEGISTE.git
-git push -u origin main
-```
-
-## 3. Sincronización automática con Hugging Face
+## Sincronización automática con Hugging Face
 
 En el repo de GitHub: **Settings** → **Secrets and variables** → **Actions** → **New repository secret**
 
@@ -35,7 +16,7 @@ En el repo de GitHub: **Settings** → **Secrets and variables** → **Actions**
 
 A partir de ahí, cada **push a `main`** actualizará el Space [angelucv/NovaBank_Angel](https://huggingface.co/spaces/angelucv/NovaBank_Angel).
 
-## Remotes actuales
+## Remotes
 
-- `origin` → GitHub (tu nuevo repo)
-- `hf` → Hugging Face Space (para push manual si quieres: `git push hf main`)
+- `origin` → [actuarial-cortex-demo-bank](https://github.com/angelucv/actuarial-cortex-demo-bank)
+- `hf` → [NovaBank_Angel](https://huggingface.co/spaces/angelucv/NovaBank_Angel) (push manual: `git push hf main`)

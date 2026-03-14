@@ -14,7 +14,7 @@ license: unknown
 
 # NovaBank Angel — Dashboard análisis de fraude
 
-Demo en Streamlit. Código en GitHub; se despliega en [Hugging Face Spaces](https://huggingface.co/spaces/angelucv/NovaBank_Angel).
+Demo en Streamlit. Código en [GitHub (actuarial-cortex-demo-bank)](https://github.com/angelucv/actuarial-cortex-demo-bank); se despliega en [Hugging Face Spaces](https://huggingface.co/spaces/angelucv/NovaBank_Angel).
 
 ## Repo y despliegue
 
