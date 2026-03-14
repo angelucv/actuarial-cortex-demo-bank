@@ -1,6 +1,6 @@
 ---
 title: Demo de Actuarial Cortex - Deteccion de Fraude
-emoji: ":bank:"
+emoji: ??
 colorFrom: red
 colorTo: red
 sdk: docker
@@ -9,7 +9,7 @@ tags:
 - streamlit
 - actuarial-cortex
 pinned: false
-short_description: Demo Actuarial Cortex - dashboard analisis de fraude en Streamlit
+short_description: Demo Actuarial Cortex - analisis de fraude (Streamlit)
 license: unknown
 ---
 
