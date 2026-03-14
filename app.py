@@ -34,20 +34,33 @@ def handle_click(segment_value, grouping_key_value):
 df = load_data()
 kpis = calculate_kpis(df)
 
-# --- Branding Actuarial Cortex ---
+# URLs de logos Actuarial Cortex (sitio oficial)
+LOGO_SIDEBAR = "https://actuarial-cortex.pages.dev/logo-AC/logo-AC-AC-vertical-blanco.png"
+LOGO_INICIO = "https://actuarial-cortex.pages.dev/logo-AC/logo-actuarial-cortex-principal-blanco.png"
+
+# --- Branding Actuarial Cortex (sidebar: logo vertical) ---
 try:
-    st.sidebar.image(
-        "https://raw.githubusercontent.com/angelucv/cvea-platform/main/actuarial-cortex/logo-AC/logo-AC-AC-horizontal-negro.png",
-        use_container_width=True,
-        caption="Actuarial Cortex"
-    )
+    st.sidebar.image(LOGO_SIDEBAR, use_container_width=True, caption="Actuarial Cortex")
 except Exception:
     st.sidebar.markdown("**Actuarial Cortex**")
 st.sidebar.caption("Aplicativo para bancos · Detección de fraude")
 
+# --- Inicio: logo principal y descripción ---
+try:
+    st.image(LOGO_INICIO, use_container_width=True)
+except Exception:
+    st.markdown("**Actuarial Cortex**")
+st.markdown("""
+**Actuarial Cortex** es un hub de conocimiento y tecnología actuarial. Este **demo de detección de fraude** 
+forma parte de su oferta para el sector bancario: permite explorar la **exposición al riesgo (IER)** y la 
+**tasa de fraude** por segmentos (marca de tarjeta, categoría de comercio), con métricas ejecutivas y 
+análisis estratégico para apoyar la toma de decisiones.
+""")
+st.divider()
+
 # --- Títulos y Navegación Lateral ---
 st.title("🛡️ Actuarial Cortex — Banca · Detección de Fraude")
-st.markdown("**Aplicativo de Actuarial Cortex para el sector bancario, enfocado en análisis y detección de fraude.**")
+st.caption("Resumen ejecutivo y análisis estratégico de riesgo por segmentación.")
 
 st.sidebar.header("Opciones de Análisis")
 
@@ -156,3 +169,13 @@ with tab2:
                 st.session_state['segment_filter'] = None
                 st.session_state['grouping_key'] = None
                 st.rerun()
+
+# --- Pie de página Actuarial Cortex ---
+st.divider()
+st.markdown("""
+<div style="text-align: center; color: #64748b; font-size: 0.9rem;">
+  <p style="margin: 0.25rem 0;"><strong>© Actuarial Cortex</strong></p>
+  <p style="margin: 0.25rem 0;">Conocimiento · Tecnología · Formación</p>
+  <p style="margin: 0.25rem 0;">actuarial.cortex@gmail.com | @actuarial_cortex</p>
+</div>
+""", unsafe_allow_html=True)
